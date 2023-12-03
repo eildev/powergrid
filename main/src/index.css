@@ -14,8 +14,21 @@
 body {
     font-family: "Inter" sans-serif;
     color: #707070;
+    background: #F6FCFC !important;
 }
 
 .font-karla {
     font-family: "Karla", sans-serif;
 }
+
+
+/* .swiper-button-prev,
+.swiper-button-next {
+    height: 15px !important;
+    width: 15px !important;
+    margin: 50px;
+    color: #fff;
+    border-radius: 50%;
+    border: 2px solid #fff;
+    padding: 40px;
+} */

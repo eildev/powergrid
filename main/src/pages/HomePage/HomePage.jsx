@@ -1,20 +1,30 @@
 import Hero from "../../components/dynamic/Hero/Hero";
 import Slider from "../../components/dynamic/Slider/Slider";
 
+import about1 from "../../assets/img/about/about1.png";
+import about2 from "../../assets/img/about/about2.png";
+import about3 from "../../assets/img/about/about3.png";
+import Activities from "./Section/Activities";
+
 const HomePage = () => {
   return (
     <div>
       <Slider />
-      <div className="bg-[#E2F3FB]">
-        <div className="container mx-auto py-20">
+      <div className="py-32">
+        <div className="container mx-auto">
           <Hero
             title="About our company"
-            width={70}
-            width2={30}
-            description="Lorem, ipsum dolor sit amet consectetur adipisicing elit. Incidunt quam expedita nulla totam, sit odit magni sequi hic quasi, vero rerum dicta esse. Neque, dolore!"
+            width={50}
+            width2={50}
+            description="Lorem, ipsum dolor sit amet consectetur adipisicing elit. Incidunt quam expedita nulla totam, sit odit magni sequi hic quasi, vero rerum dicta esse. Neque, dolore! Lorem ipsum dolor sit amet consectetur adipisicing elit. Aperiam, nobis, architecto cupiditate delectus eum sunt, tempora voluptas illo molestias perferendis accusantium? !"
+            description2="Lorem, ipsum dolor sit amet consectetur adipisicing elit. Incidunt quam expedita nulla totam, sit odit magni sequi hic quasi, vero rerum dicta esse. Neque, dolore! Lorem ipsum dolor sit amet consectetur adipisicing elit. Aperiam, nobis, architecto cupiditate delectus eum sunt, tempora voluptas illo molestias perferendis accusantium? !"
+            img1={about1}
+            img2={about2}
+            img3={about3}
           />
         </div>
       </div>
+      <Activities />
     </div>
   );
 };
