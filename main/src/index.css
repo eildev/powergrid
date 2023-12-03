@@ -1,0 +1,21 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@font-face {
+    font-family: "Inter" sans-serif;
+    src: url("./assets/fonts/Inter/Inter-Black.ttf");
+
+    font-family: "Karla", sans-serif;
+    src: url("./assets/fonts/Karla/Karla-Regular.ttf");
+}
+
+
+body {
+    font-family: "Inter" sans-serif;
+    color: #707070;
+}
+
+.font-karla {
+    font-family: "Karla", sans-serif;
+}
