@@ -1,0 +1,42 @@
+import HeroTitle from "../../../element/HeroTitle";
+import userImage from "../../../assets/img/user/user2.jpg";
+import Button from "../../../element/Button";
+
+const MessageFormChairman = () => {
+  return (
+    <div className="bg-secondary">
+      <div className="container mx-auto">
+        <div className="grid lg:grid-cols-2">
+          <div className="py-10 me-10">
+            <HeroTitle
+              title={"message from The chairman"}
+              description1="Lorem, ipsum dolor sit amet consectetur adipisicing elit. Incidunt
+        quam expedita nulla totam, sit odit magni sequi hic quasi, vero
+        rerum dicta esse. Neque, dolore! Lorem ipsum dolor sit amet
+        consectetur adipisicing elit. Aperiam, nobis, architecto
+        cupiditate delectus eum sunt, tempora voluptas illo molestias
+        perferendis accusantium? ! Lorem, ipsum dolor sit amet consectetur
+        adipisicing elit. Incidunt quam expedita nulla totam, sit odit
+        magni sequi hic quasi, vero rerum dicta esse. Neque, dolore! Lorem
+        ipsum dolor sit amet consectetur adipisicing elit. Aperiam, nobis,
+        architecto cupiditate delectus eum sunt, tempora voluptas illo
+        molestias perferendis accusantium? !"
+            />
+            <div className="mt-7">
+              <Button title="more" className="bg-body text-primary italic" />
+            </div>
+          </div>
+          <div className="max-h-[500px] overflow-hidden">
+            <img
+              className="h-full w-full object-cover"
+              src={userImage}
+              alt=""
+            />
+          </div>
+        </div>
+      </div>
+    </div>
+  );
+};
+
+export default MessageFormChairman;

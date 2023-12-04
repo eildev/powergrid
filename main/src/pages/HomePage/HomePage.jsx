@@ -5,10 +5,17 @@ import about1 from "../../assets/img/about/about1.png";
 import about2 from "../../assets/img/about/about2.png";
 import about3 from "../../assets/img/about/about3.png";
 import Activities from "./Section/Activities";
+import WhyChooseUs from "./Section/WhyChooseUs";
+import MessageFormChairman from "./Section/MessageFormChairman";
+import OurServices from "./Section/OurServices";
+import OurSisterConcern from "./Section/OurSisterConcern";
+import ProfessionalTeam from "./Section/ProfessionalTeam";
+import Gallery from "./Section/Gallery";
+import GetAQuote from "./Section/GetAQuote";
 
 const HomePage = () => {
   return (
-    <div>
+    <>
       <Slider />
       <div className="py-32">
         <div className="container mx-auto">
@@ -25,7 +32,14 @@ const HomePage = () => {
         </div>
       </div>
       <Activities />
-    </div>
+      <WhyChooseUs />
+      <MessageFormChairman />
+      <OurServices />
+      <OurSisterConcern />
+      <ProfessionalTeam />
+      <Gallery />
+      <GetAQuote />
+    </>
   );
 };
 
