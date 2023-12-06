@@ -4,8 +4,8 @@ import Button from "../../../element/Button";
 
 const MessageFormChairman = () => {
   return (
-    <div className="bg-secondary">
-      <div className="container mx-auto">
+    <div className="bg-secondary my-24">
+      <div className="container mx-auto md:px-10 px-5">
         <div className="grid lg:grid-cols-2">
           <div className="py-10 me-10">
             <HeroTitle
@@ -26,7 +26,7 @@ const MessageFormChairman = () => {
               <Button title="more" className="bg-body text-primary italic" />
             </div>
           </div>
-          <div className="max-h-[500px] overflow-hidden">
+          <div className="max-h-[550px] overflow-hidden">
             <img
               className="h-full w-full object-cover"
               src={userImage}

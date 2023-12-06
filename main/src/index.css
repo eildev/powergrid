@@ -25,13 +25,15 @@ body {
 }
 
 
-/* .swiper-button-prev,
-.swiper-button-next {
-    height: 15px !important;
-    width: 15px !important;
-    margin: 50px;
-    color: #fff;
-    border-radius: 50%;
-    border: 2px solid #fff;
-    padding: 40px;
-} */
+.swiper-pagination-bullet {
+    height: 30px;
+    width: 30px;
+    border-radius: 7px;
+    margin-right: 20px;
+    background: #e2f3fb;
+    opacity: 1;
+}
+
+.swiper-pagination-bullet-active {
+    background: #1FBEF9;
+}

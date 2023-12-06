@@ -1,9 +1,13 @@
-const Banner = ({ bannerTitle, height, bannerImage }) => {
+const Banner = ({ bannerTitle, bannerImage, bannerText }) => {
   return (
     <div
-      className={`min-h-[${height}%] flex justify-center items-center bg-no-repeat bg-cover bg-center bg-[url("${bannerImage}")]`}
+      style={{ backgroundImage: `url(${bannerImage})` }}
+      className={`min-h-[60vh] flex justify-center items-center bg-no-repeat bg-cover bg-center`}
     >
-      <h2>{bannerTitle}</h2>
+      <div className="text-center w-1/2  text-white mx-auto">
+        <h2 className="font-bold font-karla text-5xl mb-2">{bannerTitle}</h2>
+        <p>{bannerText}</p>
+      </div>
     </div>
   );
 };

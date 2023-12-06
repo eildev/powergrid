@@ -3,7 +3,7 @@ import servicesImg from "../../../assets/img/about/about1.png";
 
 const ServicesCard = () => {
   return (
-    <div className="max-w-[350px]">
+    <div className="max-w-[300px]">
       <div>
         <img src={servicesImg} alt="" />
       </div>

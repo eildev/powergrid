@@ -12,25 +12,26 @@ import OurSisterConcern from "./Section/OurSisterConcern";
 import ProfessionalTeam from "./Section/ProfessionalTeam";
 import Gallery from "./Section/Gallery";
 import GetAQuote from "./Section/GetAQuote";
+import LatestNews from "./Section/LatestNews";
+import Clients from "./Section/Clients";
+import Container from "../../components/dynamic/Container/Container";
 
 const HomePage = () => {
   return (
     <>
       <Slider />
-      <div className="py-32">
-        <div className="container mx-auto">
-          <Hero
-            title="About our company"
-            width={50}
-            width2={50}
-            description="Lorem, ipsum dolor sit amet consectetur adipisicing elit. Incidunt quam expedita nulla totam, sit odit magni sequi hic quasi, vero rerum dicta esse. Neque, dolore! Lorem ipsum dolor sit amet consectetur adipisicing elit. Aperiam, nobis, architecto cupiditate delectus eum sunt, tempora voluptas illo molestias perferendis accusantium? !"
-            description2="Lorem, ipsum dolor sit amet consectetur adipisicing elit. Incidunt quam expedita nulla totam, sit odit magni sequi hic quasi, vero rerum dicta esse. Neque, dolore! Lorem ipsum dolor sit amet consectetur adipisicing elit. Aperiam, nobis, architecto cupiditate delectus eum sunt, tempora voluptas illo molestias perferendis accusantium? !"
-            img1={about1}
-            img2={about2}
-            img3={about3}
-          />
-        </div>
-      </div>
+      <Container>
+        <Hero
+          title="About our company"
+          width={50}
+          width2={50}
+          description="Lorem, ipsum dolor sit amet consectetur adipisicing elit. Incidunt quam expedita nulla totam, sit odit magni sequi hic quasi, vero rerum dicta esse. Neque, dolore! Lorem ipsum dolor sit amet consectetur adipisicing elit. Aperiam, nobis, architecto cupiditate delectus eum sunt, tempora voluptas illo molestias perferendis accusantium? !"
+          description2="Lorem, ipsum dolor sit amet consectetur adipisicing elit. Incidunt quam expedita nulla totam, sit odit magni sequi hic quasi, vero rerum dicta esse. Neque, dolore! Lorem ipsum dolor sit amet consectetur adipisicing elit. Aperiam, nobis, architecto cupiditate delectus eum sunt, tempora voluptas illo molestias perferendis accusantium? !"
+          img1={about1}
+          img2={about2}
+          img3={about3}
+        />
+      </Container>
       <Activities />
       <WhyChooseUs />
       <MessageFormChairman />
@@ -39,6 +40,8 @@ const HomePage = () => {
       <ProfessionalTeam />
       <Gallery />
       <GetAQuote />
+      <LatestNews />
+      <Clients />
     </>
   );
 };

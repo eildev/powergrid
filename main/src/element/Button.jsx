@@ -4,8 +4,8 @@ const Button = ({ title, className }) => {
   return (
     <button
       className={cn(
-        className,
-        "px-7 py-2 font-bold uppercase font-karla rounded"
+        "px-7 py-2 font-bold text-sm uppercase font-karla rounded",
+        className
       )}
     >
       {title}

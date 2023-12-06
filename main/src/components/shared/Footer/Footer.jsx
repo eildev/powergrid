@@ -47,9 +47,9 @@ const contacts = [
 
 const Footer = () => {
   return (
-    <footer className="bg-[#E2F3FB] border-t-4 border-[#1FBEF9] ">
+    <footer className=" border-t-4 border-[#1FBEF9] ">
       <div className="container mx-auto">
-        <div className="grid xl:grid-cols-4 md:grid-cols-2 gap-5 items-center py-[50px]">
+        <div className="grid xl:grid-cols-4 md:grid-cols-2 gap-5 items-start py-[50px]">
           <div>
             <Logo />
             <p className="text-[#707070] ">

@@ -5,12 +5,12 @@ import SocialIcon from "./SocialIcon";
 
 const TopBar = () => {
   return (
-    <div className="container mx-auto ">
-      <div className="grid grid-cols-2 h-[80px] items-center px-2 sm:px-3">
+    <div className="container mx-auto">
+      <div className="grid grid-cols-2 h-[80px] items-center">
         <div>
           <Logo />
         </div>
-        <div className="flex justify-between items-center text-[#707070] font-karla">
+        <div className="flex items-center justify-between text-[#707070] font-karla">
           <ISOCertified />
           <SocialIcon />
           <Language />
