@@ -1,6 +1,8 @@
 import Banner from "../../components/dynamic/Banner/Banner";
 import image from "../../assets/img/banner/bannerimg.png";
 import BenefitsWithOurService from "./Section/BenefitsWithOurService";
+import AboutOurBestService from "./Section/AboutOurBestService";
+import OurAllServices from "./Section/OurAllServices";
 const ServicesPage = () => {
   return (
     <>
@@ -12,6 +14,8 @@ const ServicesPage = () => {
         bannerTitle="Our Services"
       />
       <BenefitsWithOurService />
+      <AboutOurBestService />
+      <OurAllServices />
     </>
   );
 };

@@ -2,12 +2,14 @@ import Container from "../../../components/dynamic/Container/Container";
 import SectionHeader from "../../../components/shared/SectionHeader/SectionHeader";
 import { AiTwotoneLike } from "react-icons/ai";
 import Button from "../../../element/Button";
-import { FaCalendarCheck, FaComment, FaEye, FaUser } from "react-icons/fa6";
+import { FaEye } from "react-icons/fa6";
 
 // image import
 import image1 from "../../../assets/img/about/about1.png";
 import image2 from "../../../assets/img/about/about3.png";
 import PlayButton from "../../../components/dynamic/PlayButton/PlayButton";
+import IconStatus from "../../../element/IconStatus";
+import NewsDate from "../../../element/NewsDate";
 
 const LatestNews = () => {
   return (
@@ -32,7 +34,7 @@ const LatestNews = () => {
               alt=""
             />
             <PlayButton />
-            <div className="absolute top-4 right-5 text-white text-xs flex items-center gap-3 italic">
+            <IconStatus>
               <span className="flex items-center gap-1">
                 <FaEye /> 200298
               </span>
@@ -40,7 +42,7 @@ const LatestNews = () => {
               <span className="flex items-center gap-1">
                 <AiTwotoneLike /> 2020
               </span>
-            </div>
+            </IconStatus>
           </div>
           <div className="grid items-center grid-cols-3 gap-3 my-3 h-[30%]">
             <div>
@@ -84,17 +86,7 @@ const LatestNews = () => {
               />
             </div>
 
-            <div className="flex justify-between items-center gap-3 my-3">
-              <span className="flex justify-between items-center gap-2">
-                <FaUser className="text-primary" /> By Admin
-              </span>
-              <span className="flex justify-between items-center gap-2">
-                <FaCalendarCheck className="text-primary" /> 5 Nov 2023
-              </span>
-              <span className="flex justify-between items-center gap-2">
-                <FaComment className="text-primary" /> Comments
-              </span>
-            </div>
+            <NewsDate />
             <div>
               <h3 className="my-3 text-2xl font-bold text-primary capitalize">
                 Head line latest news

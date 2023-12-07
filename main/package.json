@@ -11,6 +11,7 @@
   },
   "dependencies": {
     "@egjs/react-flicking": "^4.11.0",
+    "@szhsin/react-accordion": "^1.2.3",
     "clsx": "^2.0.0",
     "hamburger-react": "^2.5.0",
     "react": "^18.2.0",

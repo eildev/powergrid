@@ -1,6 +1,7 @@
 import { FaCheck } from "react-icons/fa6";
 import Container from "../../../components/dynamic/Container/Container";
 import SmallHero from "../../../components/dynamic/SmallHero/SmallHero";
+import Statistic from "../../../element/Statistic";
 
 const OurMission = () => {
   return (
@@ -13,20 +14,7 @@ const OurMission = () => {
             </span>
             Qualified IT Experts
           </h2>
-          <div className="flex justify-between items-center mt-10">
-            <div>
-              <span className="text-primary font-bold text-3xl">10k++</span>
-              <p>Subscriber</p>
-            </div>
-            <div>
-              <span className="text-primary font-bold text-3xl">10k++</span>
-              <p>Subscriber</p>
-            </div>
-            <div>
-              <span className="text-primary font-bold text-3xl">10k++</span>
-              <p>Subscriber</p>
-            </div>
-          </div>
+          <Statistic />
         </div>
         <SmallHero
           title="Our Vision"
