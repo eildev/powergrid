@@ -6,7 +6,7 @@ const WhyChooseUsServices = ({ whyChooseUs }) => {
         {icon}
       </span>
       <div>
-        <h4 className="text-xl font-karla mb-2">{title}</h4>
+        <h4 className="text-xl font-karla mb-2 capitalize">{title}</h4>
         <p className=" text-xs">{description}</p>
       </div>
     </div>

@@ -9,7 +9,7 @@ const Hero = ({
   description2,
 }) => {
   return (
-    <div className="grid grid-cols-2 items-center flex-col md:flex-row gap-10">
+    <div className="grid md:grid-cols-2 items-center flex-col md:flex-row gap-10">
       <div className={`w-[${width}%]`}>
         <h2 className="text-5xl font-bold text-[#1FBEF9] capitalize font font-karla drop-shadow mb-7">
           {title}
