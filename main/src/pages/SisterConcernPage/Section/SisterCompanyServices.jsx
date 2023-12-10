@@ -1,18 +1,17 @@
 import Container from "../../../components/dynamic/Container/Container";
+// import { companyServicesData } from "../../../data/companyServicesData";
 import Button from "../../../element/Button";
 import CompanyServicesElement from "../../../element/CompanyServicesElement";
 import Header from "../../../element/Header";
 
-const SisterCompanyServices = () => {
+const SisterCompanyServices = ({ companyServicesData }) => {
   return (
     <Container bgColor="bg-secondary">
-      <Header className="text-gray text-3xl mb-10">Company Name Here</Header>
+      <Header className="text-gray text-3xl mb-10">It Company Services</Header>
       <div className="grid lg:grid-cols-3 md:grid-cols-2 gap-20">
-        <CompanyServicesElement />
-        <CompanyServicesElement />
-        <CompanyServicesElement />
-        <CompanyServicesElement />
-        <CompanyServicesElement />
+        {companyServicesData.map((data) => (
+          <CompanyServicesElement key={data.id} data={data} />
+        ))}
         <Button title="View all" className="bg-primary text-white text-xl" />
       </div>
     </Container>

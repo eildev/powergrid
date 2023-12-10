@@ -1,6 +1,7 @@
 import HeroTitle from "../../../element/HeroTitle";
-import userImage from "../../../assets/img/user/user2.jpg";
+// import userImage from "../../../assets/img/user/user2.jpg";
 import Button from "../../../element/Button";
+import ImageBox from "../../../components/dynamic/ImageBox/ImageBox";
 
 const MessageFormChairman = () => {
   return (
@@ -27,11 +28,7 @@ const MessageFormChairman = () => {
             </div>
           </div>
           <div className="max-h-[550px] overflow-hidden">
-            <img
-              className="h-full w-full object-cover"
-              src={userImage}
-              alt=""
-            />
+            <ImageBox className="h-full w-full"></ImageBox>
           </div>
         </div>
       </div>

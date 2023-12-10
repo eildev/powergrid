@@ -1,6 +1,7 @@
-import { FaAward, FaStar } from "react-icons/fa6";
+import { FaStar } from "react-icons/fa6";
 import Container from "../../../components/dynamic/Container/Container";
 import ImageBoxWithPlayButton from "../../../element/ImageBoxWithPlayButton";
+import icon from "../../../assets/icons/main/award.svg";
 
 const Achievement = () => {
   return (
@@ -14,16 +15,16 @@ const Achievement = () => {
           <h2 className="text-primary font-bold text-2xl mb-5">
             We Have Several Achievement In Engineering Sector
           </h2>
-          <p>
+          <p className="mt-10">
             Lorem ipsum dolor sit, amet consectetur adipisicing elit. Eveniet
             ipsum iusto vitae eius inventore tempora eaque cumque voluptatibus
             dicta dolores.
           </p>
 
-          <div className="bg-secondary rounded-md w-full p-10 flex justify-between items-start mt-32">
+          <div className="bg-secondary rounded-md w-full p-10 flex justify-between items-start mt-20">
             <div>
               <span className="flex gap-2 items-center text-primary text-lg font-bold mb-5">
-                <FaAward /> Award
+                <img src={icon} className="h-[30px]" alt="" /> Award
               </span>
               <h4 className="text-primary font-bold text-xl mb-2">
                 Best Company

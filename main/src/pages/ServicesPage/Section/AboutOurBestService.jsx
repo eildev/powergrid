@@ -6,8 +6,8 @@ import Statistic from "../../../element/Statistic";
 const AboutOurBestService = () => {
   return (
     <Container bgColor="bg-secondary my-10">
-      <div className="flex justify-between items-center gap-10">
-        <div className="w-[50%] px-20">
+      <div className="flex lg:justify-between flex-col lg:flex-row gap-5 items-center  lg:gap-10">
+        <div className="w-[50%]">
           <Header className="pb-10 mb-5 border-b border-primary">
             About Our Best Services
           </Header>

@@ -17,7 +17,7 @@ const OurMission = () => {
           <Statistic />
         </div>
         <SmallHero
-          title="Our Vision"
+          title="Our Mission"
           description=" Lorem ipsum dolor sit amet consectetur adipisicing elit.
        Provident, nisi."
         />

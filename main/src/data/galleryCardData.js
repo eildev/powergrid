@@ -1,5 +1,7 @@
 import image from "../assets/img/about/about1.png";
 
+
+
 export const galleryCardData = [
     {
         id: 1,

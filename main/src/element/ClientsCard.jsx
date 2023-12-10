@@ -1,12 +1,12 @@
 import { FaQuoteLeft, FaQuoteRight } from "react-icons/fa6";
-import image1 from "../assets/img/user/user4.jpg";
+import image1 from "../assets/img/about/about1.png";
 
 const ClientsCard = () => {
   return (
     <div className="ml-24">
       <div className="bg-secondary w-[350px] rounded-md relative">
-        <div className="absolute top-1/2 -left-[50px] -translate-y-1/2 w-[100px] h-[100px] bg-gray rounded-md overflow-hidden">
-          <img src={image1} alt="" />
+        <div className="absolute top-1/2 -left-[50px] -translate-y-1/2 w-[100px] h-[100px] rounded-md overflow-hidden">
+          <img src={image1} className="h-full w-full object-cover" alt="" />
         </div>
 
         <div className="py-5 pr-5 pl-16">

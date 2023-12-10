@@ -4,6 +4,9 @@ import TopBar from "../components/shared/TopBar/TopBar";
 import Footer from "../components/shared/Footer/Footer";
 
 const MainLayouts = () => {
+  // const location = useLocation();
+  // const showTopbar = location.pathname("/");
+
   return (
     <div>
       <div className="hidden lg:block">
