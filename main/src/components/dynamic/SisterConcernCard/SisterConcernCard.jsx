@@ -1,7 +1,7 @@
-import image from "../../../assets/img/about/about1.png";
 import Button from "../../../element/Button";
 
-const SisterConcernCard = () => {
+const SisterConcernCard = ({ data }) => {
+  const { image, title, description } = data;
   return (
     <div className="bg-white border-2 border-primary rounded-sm">
       <div className="mb-2 grid">
@@ -15,12 +15,8 @@ const SisterConcernCard = () => {
         </div>
       </div>
       <div className="px-5 text-center pb-7">
-        <h4 className="text-primary text-2xl font-bold mb-3">Company Name</h4>
-        <p className="leading-7 mb-7">
-          Lorem ipsum dolor sit amet consectetur, adipisicing elit. Asperiores
-          ad, fugiat quos temporibus voluptate, iusto aperiam quasi eius quam
-          autem atque hic porro adipisci dicta.
-        </p>
+        <h4 className="text-primary text-2xl font-bold mb-3">{title}</h4>
+        <p className="leading-7 mb-7">{description}</p>
         <Button title="Visit here" className="bg-primary text-body" />
       </div>
     </div>

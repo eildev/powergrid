@@ -8,6 +8,7 @@ import icon5 from "../assets/icons/services/icon-5.svg"
 import icon6 from "../assets/icons/services/icon-6.svg"
 
 export const servicesCardData = [
+
     {
         id: 1,
         img: servicesImg,

@@ -1,17 +1,13 @@
-import { FaAtlassian } from "react-icons/fa6";
-
-const Tasks = () => {
+const Tasks = ({ data }) => {
+  const { icon, title, description } = data;
   return (
     <div className="flex gap-3 mt-4 ">
-      <span className="w-[80px] h-[80px] border-2 border-[#1FBEF9] rounded-sm text-primary text-2xl flex justify-center items-center">
-        <FaAtlassian />
+      <span className="w-[80px] h-[70px] p-3 border-2 border-[#1FBEF9] rounded-sm text-primary text-2xl flex justify-center items-center">
+        <img src={icon} className="object-contain" alt="" />
       </span>
       <div>
-        <h4 className="text-xl font-karla mb-2">Renewable Energy</h4>
-        <p className=" text-xs max-w-[250px]">
-          Lorem Ipsum is simply dummy text of the printing and typesetting
-          industry.
-        </p>
+        <h4 className="text-xl font-karla mb-2 text-[#433F3F]">{title}</h4>
+        <p className=" text-xs max-w-[250px]">{description}</p>
       </div>
     </div>
   );

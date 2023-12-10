@@ -1,6 +1,7 @@
 import Container from "../../../components/dynamic/Container/Container";
 import ServicesCard from "../../../components/dynamic/ServiceCard/ServicesCard";
 import SectionHeader from "../../../components/shared/SectionHeader/SectionHeader";
+import { servicesCardData } from "../../../data/servicesCardData";
 import Button from "../../../element/Button";
 
 const OurServices = () => {
@@ -19,15 +20,10 @@ const OurServices = () => {
         </div>
       </div>
 
-      <div className="flex flex-col md:flex-row justify-center md:justify-between items-center mb-10 gap-10">
-        <ServicesCard />
-        <ServicesCard />
-        <ServicesCard />
-      </div>
-      <div className="flex flex-col md:flex-row justify-center md:justify-between items-center gap-10">
-        <ServicesCard />
-        <ServicesCard />
-        <ServicesCard />
+      <div className="grid lg:grid-cols-3 md:grid-cols-2 gap-10">
+        {servicesCardData.map((data) => (
+          <ServicesCard key={data.id} data={data} />
+        ))}
       </div>
     </Container>
   );

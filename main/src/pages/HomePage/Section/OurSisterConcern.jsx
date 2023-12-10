@@ -1,6 +1,7 @@
 import Container from "../../../components/dynamic/Container/Container";
 import SisterConcernCard from "../../../components/dynamic/SisterConcernCard/SisterConcernCard";
 import SectionHeader from "../../../components/shared/SectionHeader/SectionHeader";
+import { sisterConcernCardData } from "../../../data/sisterConcernCardData";
 
 const OurSisterConcern = () => {
   return (
@@ -16,10 +17,10 @@ const OurSisterConcern = () => {
         />
       </div>
 
-      <div className="grid  grid-cols-3 gap-10">
-        <SisterConcernCard />
-        <SisterConcernCard />
-        <SisterConcernCard />
+      <div className="grid  lg:grid-cols-3 md:grid-col-2 gap-10">
+        {sisterConcernCardData.map((data) => (
+          <SisterConcernCard key={data.id} data={data} />
+        ))}
       </div>
     </Container>
   );

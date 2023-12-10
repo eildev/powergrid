@@ -1,5 +1,6 @@
 import Container from "../../../components/dynamic/Container/Container";
 import SectionHeader from "../../../components/shared/SectionHeader/SectionHeader";
+import { professionalCardData } from "../../../data/professionalCardData";
 import Button from "../../../element/Button";
 
 import ProfessionalCard from "../../../element/ProfessionalCard";
@@ -18,10 +19,10 @@ const ProfessionalTeam = () => {
         />
       </div>
 
-      <div className="grid gap-5 grid-cols-3">
-        <ProfessionalCard />
-        <ProfessionalCard />
-        <ProfessionalCard />
+      <div className="grid gap-10 lg:grid-cols-3 md:grid-cols-2">
+        {professionalCardData.map((data) => (
+          <ProfessionalCard key={data.id} data={data} />
+        ))}
       </div>
 
       <div className="w-full mx-auto text-center mt-10">

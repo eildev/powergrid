@@ -5,7 +5,7 @@ import Quote from "../../../components/dynamic/Quote/Quote";
 const GetAQuote = () => {
   return (
     <Container bgColor="bg-white">
-      <div className="grid gap-10 grid-cols-2">
+      <div className="grid md:gap-20 md:grid-cols-2 gap-5">
         <div>
           <Quote />
         </div>

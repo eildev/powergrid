@@ -1,5 +1,6 @@
 import SectionHeader from "../../shared/SectionHeader/SectionHeader";
 import Tasks from "../../../element/Tasks";
+import { tasksData } from "../../../data/tasksData";
 
 const OurAbilities = () => {
   return (
@@ -15,10 +16,10 @@ const OurAbilities = () => {
         />
       </div>
 
-      <div>
-        <Tasks />
-        <Tasks />
-        <Tasks />
+      <div className="grid gap-5">
+        {tasksData.map((data) => (
+          <Tasks data={data} key={data.id} />
+        ))}
       </div>
     </div>
   );
