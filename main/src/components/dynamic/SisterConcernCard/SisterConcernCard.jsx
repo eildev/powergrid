@@ -15,8 +15,12 @@ const SisterConcernCard = ({ data }) => {
         </div>
       </div>
       <div className="px-5 text-center pb-7">
-        <h4 className="text-primary text-2xl font-bold mb-3">{title}</h4>
-        <p className="leading-7 mb-7">{description}</p>
+        <h4 className="text-primary md:text-2xl text-lg font-bold mb-3">
+          {title}
+        </h4>
+        <p className="leading-5 md:leading-6 md:mb-7 mb-4 text-xs md:text-sm">
+          {description}
+        </p>
         <Button title="Visit here" className="bg-primary text-body" />
       </div>
     </div>

@@ -1,6 +1,7 @@
 import Banner from "../../components/dynamic/Banner/Banner";
 import image from "../../assets/img/banner/bannerimg.png";
 import RecentCompletedWork from "./Section/RecentCompletedWork";
+import GallerySection from "./Section/GallerySection";
 
 const GalleryPage = () => {
   return (
@@ -12,6 +13,7 @@ const GalleryPage = () => {
           Provident, nisi."
         bannerTitle="Gallery"
       />
+      <GallerySection />
       <RecentCompletedWork />
     </>
   );

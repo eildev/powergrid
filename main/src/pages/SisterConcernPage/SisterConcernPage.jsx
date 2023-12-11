@@ -33,6 +33,10 @@ const SisterConcernPage = () => {
         aperiam, saepe sed voluptate asperiores corrupti. Laborum eius, error
         quidem dolore sed asperiores accusamus ratione consectetur repellat esse
         explicabo consequatur sapiente consequuntur."
+        detailsExtra="Lorem ipsum dolor sit, amet consectetur adipisicing elit. Hic
+        accusantium eveniet accusamus numquam temporibus modi qui vel suscipit
+        obcaecati harum. Deleniti repellendus tempore incidunt beatae minus
+        minima. Totam molestias aliquid"
       />
       <SisterCompanyServices companyServicesData={itServicesData} />
       <SisterCompany2
@@ -49,6 +53,10 @@ const SisterConcernPage = () => {
         aperiam, saepe sed voluptate asperiores corrupti. Laborum eius, error
         quidem dolore sed asperiores accusamus ratione consectetur repellat esse
         explicabo consequatur sapiente consequuntur."
+        detailsExtra="Lorem ipsum dolor sit, amet consectetur adipisicing elit. Hic
+        accusantium eveniet accusamus numquam temporibus modi qui vel suscipit
+        obcaecati harum. Deleniti repellendus tempore incidunt beatae minus
+        minima. Totam molestias aliquid"
       />
       <SisterCompanyServices companyServicesData={consultingServicesData} />
       <SisterCompany
@@ -65,6 +73,10 @@ const SisterConcernPage = () => {
         aperiam, saepe sed voluptate asperiores corrupti. Laborum eius, error
         quidem dolore sed asperiores accusamus ratione consectetur repellat esse
         explicabo consequatur sapiente consequuntur."
+        detailsExtra="Lorem ipsum dolor sit, amet consectetur adipisicing elit. Hic
+        accusantium eveniet accusamus numquam temporibus modi qui vel suscipit
+        obcaecati harum. Deleniti repellendus tempore incidunt beatae minus
+        minima. Totam molestias aliquid"
       />
       <SisterCompanyServices companyServicesData={restaurantServicesData} />
     </>

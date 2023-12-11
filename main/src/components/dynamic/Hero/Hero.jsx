@@ -1,42 +1,20 @@
-const Hero = ({
-  title,
-  width,
-  width2,
-  description,
-  img1,
-  img2,
-  img3,
-  description2,
-}) => {
+import ImageBox from "../ImageBox/ImageBox";
+
+const Hero = ({ title, description, description2 }) => {
   return (
-    <div className="grid md:grid-cols-2 items-center flex-col md:flex-row gap-10">
-      <div className={`w-[${width}%]`}>
-        <h2 className="text-5xl font-bold text-[#1FBEF9] capitalize font font-karla drop-shadow mb-7">
+    <div className="grid lg:grid-cols-2 items-center flex-col md:flex-row gap-10">
+      <div>
+        <h2 className="lg:text-5xl md:text-3xl text-2xl font-bold text-[#1FBEF9] capitalize font font-karla drop-shadow mb-7">
           {title}
         </h2>
         <p className="text-[#2D2C2C] leading-8">{description}</p>
         <p className="text-[#2D2C2C] leading-8">{description2}</p>
       </div>
-      <div className={`w-[${width2}%]`}>
-        <div className="flex justify-center items-center gap-3 w-full">
-          <div className="grid gap-3 w-full">
-            <img
-              className=" h-[180px] w-full object-cover rounded"
-              src={img1}
-              alt=""
-            />
-            <img
-              className=" h-[180px] w-full object-cover rounded"
-              src={img2}
-              alt=""
-            />
-          </div>
-          <img
-            src={img3}
-            className=" h-[370px] w-full object-cover rounded"
-            alt=""
-          />
-        </div>
+      <div className="grid grid-cols-2 gap-5">
+        <ImageBox className="h-[380px] w-full col-span-2 rounded sm:hidden block"></ImageBox>
+        <ImageBox className=" h-[180px] w-full  rounded"></ImageBox>
+        <ImageBox className="h-[380px] w-full row-span-2 rounded hidden sm:block"></ImageBox>
+        <ImageBox className=" h-[180px] w-full rounded"></ImageBox>
       </div>
     </div>
   );

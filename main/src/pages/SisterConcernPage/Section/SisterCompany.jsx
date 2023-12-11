@@ -2,15 +2,19 @@ import Container from "../../../components/dynamic/Container/Container";
 import ImageBox from "../../../components/dynamic/ImageBox/ImageBox";
 import SisterCompanyDetails from "../../../element/SisterCompanyDetails";
 
-const SisterCompany = ({ title, companyDetails }) => {
+const SisterCompany = ({ title, companyDetails, detailsExtra }) => {
   return (
     <Container>
       <div className="grid md:grid-cols-2 gap-10">
-        <div className="pr-20">
-          <ImageBox className="h-[500px] w-full rounded-lg" />
+        <div className="lg:pr-20">
+          <ImageBox className="lg:h-[500px] md:h-[300px] w-full rounded-lg" />
         </div>
         <div className="">
-          <SisterCompanyDetails title={title} companyDetails={companyDetails} />
+          <SisterCompanyDetails
+            title={title}
+            companyDetails={companyDetails}
+            detailsExtra={detailsExtra}
+          />
         </div>
       </div>
     </Container>

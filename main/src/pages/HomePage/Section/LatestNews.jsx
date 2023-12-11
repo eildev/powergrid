@@ -23,9 +23,9 @@ const LatestNews = () => {
         headerDescription={true}
       />
 
-      <div className="flex lg:justify-between flex-col lg:flex-row items-start gap-5 ">
+      <div className="flex lg:justify-between flex-col lg:flex-row lg:items-start gap-10">
         <div className="h-[450px] lg:w-[45%] w-full relative">
-          <div className="relative h-[70%]">
+          <div className="relative sm:h-[70%] h-full">
             <ImageBoxWithPlayButton className="w-full h-full relative">
               <IconStatus>
                 <span className="flex items-center gap-1 text-lg">
@@ -38,33 +38,36 @@ const LatestNews = () => {
               </IconStatus>
             </ImageBoxWithPlayButton>
           </div>
-          <div className="grid items-center grid-cols-3 gap-3 my-3 h-[30%]">
-            <div>
-              <div className="mb-2 h-[80%]">
-                <ImageBox className="w-full h-[100px]"></ImageBox>
+          <div className="hidden sm:block">
+            <div className="grid items-center grid-cols-3 gap-3 my-3 h-[30%] ">
+              <div>
+                <div className="mb-2 h-[80%]">
+                  <ImageBox className="w-full h-[100px]"></ImageBox>
+                </div>
+                <div className="h-[20%]">
+                  <Button
+                    className="bg-primary text-white text-[12px]"
+                    title="view all"
+                  />
+                </div>
               </div>
-              <div className="h-[20%]">
-                <Button
-                  className="bg-primary text-white text-[12px]"
-                  title="view all"
-                />
+              <div className="h-full w-full">
+                <ImageBox className="w-full h-full"></ImageBox>
               </div>
-            </div>
-            <div className="h-full w-full">
-              <ImageBox className="w-full h-full"></ImageBox>
-            </div>
-            <div className="h-full w-full">
-              <ImageBox className="w-full h-full"></ImageBox>
+              <div className="h-full w-full">
+                <ImageBox className="w-full h-full"></ImageBox>
+              </div>
             </div>
           </div>
         </div>
-        <div className="w-[55%] flex lg:justify-between flex-col lg:flex-row items-start gap-5 h-[430px]">
-          <div className="lg:w-1/2 w-full h-full">
+
+        <div className="lg:w-[55%] w-full flex justify-between items-center gap-10 h-[500px] lg:-h-[430px]">
+          <div className="sm:w-1/2 w-full h-full">
             <div className="w-full h-[70%]">
               <ImageBox className="w-full h-full"></ImageBox>
             </div>
 
-            <div className="px-5">
+            <div className="">
               <NewsDate />
               <h3 className="my-3 text-2xl font-bold text-primary capitalize">
                 Head line latest news
@@ -76,14 +79,14 @@ const LatestNews = () => {
             </div>
           </div>
 
-          <div className=" lg:w-1/2 w-full h-full">
+          <div className="w-1/2 h-full hidden sm:block">
             <h3 className="mb-3 text-2xl font-bold text-primary capitalize">
               Head line latest news
             </h3>
             <div className="w-full h-[70%]">
               <ImageBox className="w-full h-full"></ImageBox>
             </div>
-            <div className="px-5">
+            <div className="">
               <NewsDate />
 
               <p className="text-xs">

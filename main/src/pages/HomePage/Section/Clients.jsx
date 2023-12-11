@@ -25,9 +25,9 @@ const Clients = () => {
         headerDescription={true}
       />
 
-      <div className="px-24 py-20 bg-white rounded">
+      <div className="lg:px-24  py-20 bg-white rounded">
         <Swiper
-          slidesPerView={2}
+          slidesPerView={1}
           spaceBetween={50}
           pagination={{
             clickable: true,
@@ -35,6 +35,16 @@ const Clients = () => {
           autoplay={{
             delay: 5000,
             disableOnInteraction: false,
+          }}
+          breakpoints={{
+            640: {
+              slidesPerView: 1,
+              spaceBetween: 20,
+            },
+            768: {
+              slidesPerView: 2,
+              spaceBetween: 20,
+            },
           }}
           loop={true}
           modules={[Autoplay, Pagination]}

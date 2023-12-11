@@ -39,22 +39,26 @@ const Slider = () => {
         }}
         navigation={true}
         modules={[Autoplay, Navigation, EffectCreative]}
-        className="mySwiper"
+        className="mySwiper h-full"
       >
         <SwiperSlide>
-          <img src={image} alt="" />
+          <img src={image} className="h-full object-cover" alt="" />
           <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 z-10">
-            <h2 className="text-[101px] text-[#fff]">Power Grid</h2>
+            <h2 className="lg:text-[101px] md:text-3xl text-2xl text-[#fff]">
+              Power Grid
+            </h2>
           </div>
         </SwiperSlide>
         <SwiperSlide>
-          <img src={image} alt="" />
+          <img src={image} className="h-full object-cover" alt="" />
           <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 z-10">
-            <h2 className="text-[101px] text-[#fff]">Power Grid</h2>
+            <h2 className="lg:text-[101px] md:text-3xl text-2xl text-[#fff]">
+              Power Grid
+            </h2>
           </div>
         </SwiperSlide>
         <SwiperSlide>
-          <img src={image} alt="" />
+          <img src={image} className="h-full object-cover" alt="" />
           <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 z-10">
             <h2 className="lg:text-[101px] md:text-3xl text-2xl text-[#fff]">
               Power Grid
@@ -67,22 +71,3 @@ const Slider = () => {
 };
 
 export default Slider;
-
-{
-  /* <div class="swiper mySwiper">
-    <div class="swiper-wrapper">
-      <div class="swiper-slide">Slide 1</div>
-      <div class="swiper-slide">Slide 2</div>
-      <div class="swiper-slide">Slide 3</div>
-      <div class="swiper-slide">Slide 4</div>
-      <div class="swiper-slide">Slide 5</div>
-      <div class="swiper-slide">Slide 6</div>
-      <div class="swiper-slide">Slide 7</div>
-      <div class="swiper-slide">Slide 8</div>
-      <div class="swiper-slide">Slide 9</div>
-    </div>
-    <div class="swiper-button-next"></div>
-    <div class="swiper-button-prev"></div>
-    <div class="swiper-pagination"></div>
-  </div> */
-}

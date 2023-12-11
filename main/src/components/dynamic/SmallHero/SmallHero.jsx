@@ -3,7 +3,7 @@ import ImageBox from "../ImageBox/ImageBox";
 
 const SmallHero = ({ title, description }) => {
   return (
-    <div className="flex justify-between items-center gap-10 md:w-1/2 w-full">
+    <div className="flex justify-between items-center md:gap-10 lg:w-1/2 gap-5 w-full">
       <ImageBox />
       <div>
         <h2 className="text-primary text-xl font-bold mb-5">{title}</h2>

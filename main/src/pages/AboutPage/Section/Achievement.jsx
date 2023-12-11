@@ -6,22 +6,22 @@ import icon from "../../../assets/icons/main/award.svg";
 const Achievement = () => {
   return (
     <Container>
-      <div className="flex justify-between items-start gap-20">
-        <div className="w-[45%] px-10">
+      <div className="flex lg:justify-between lg:flex-row flex-col items-start lg:gap-20 gap-10">
+        <div className="lg:w-[45%] lg:px-10 w-full">
           <ImageBoxWithPlayButton className="h-[500px] w-full relative rounded-md" />
         </div>
 
-        <div className="w-[55%] px-10 grid">
+        <div className="lg:w-[55%] lg:px-10 w-full grid">
           <h2 className="text-primary font-bold text-2xl mb-5">
             We Have Several Achievement In Engineering Sector
           </h2>
-          <p className="mt-10">
+          <p className="lg:mt-10">
             Lorem ipsum dolor sit, amet consectetur adipisicing elit. Eveniet
             ipsum iusto vitae eius inventore tempora eaque cumque voluptatibus
             dicta dolores.
           </p>
 
-          <div className="bg-secondary rounded-md w-full p-10 flex justify-between items-start mt-20">
+          <div className="bg-secondary rounded-md w-full p-10 flex justify-between sm:flex-row flex-col items-start lg:mt-20 mt-10 gap-3">
             <div>
               <span className="flex gap-2 items-center text-primary text-lg font-bold mb-5">
                 <img src={icon} className="h-[30px]" alt="" /> Award
@@ -35,7 +35,7 @@ const Achievement = () => {
               </p>
             </div>
             <div>
-              <div className="flex gap-3 items-center mb-5">
+              <div className="flex gap-3 items-center sm:mb-5 mb-2">
                 <span className="flex gap-2 items-center text-[#ECBE26]">
                   <FaStar />
                   <FaStar />

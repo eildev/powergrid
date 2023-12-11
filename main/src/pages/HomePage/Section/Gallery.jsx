@@ -20,7 +20,7 @@ const Gallery = () => {
         />
       </div>
 
-      <div className="flex justify-center items-center gap-10 mb-10">
+      <div className="sm:flex sm:justify-center items-center sm:gap-10 mb-10 gap-3 grid grid-cols-2">
         <Button
           title="Solar"
           className="bg-transparent text-primary border border-primary"
@@ -36,7 +36,7 @@ const Gallery = () => {
         <Button title="All" className="bg-transparent  border border-primary" />
       </div>
 
-      <div className="grid lg:grid-cols-3 md:grid-col-2 md:gap-10  gap-5">
+      <div className="grid lg:grid-cols-3 md:grid-cols-2 md:gap-10  gap-5">
         {galleryCardData.map((data) => (
           <GalleryCard data={data} key={data.id} />
         ))}

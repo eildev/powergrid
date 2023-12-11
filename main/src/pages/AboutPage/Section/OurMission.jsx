@@ -6,8 +6,8 @@ import Statistic from "../../../element/Statistic";
 const OurMission = () => {
   return (
     <Container>
-      <div className="flex justify-between items-center  gap-40">
-        <div className="md:w-1/2 w-full">
+      <div className="flex lg:justify-between lg:flex-row flex-col items-center  lg:gap-40 gap-10">
+        <div className="lg:w-1/2 w-full">
           <h2 className="text-primary font-bold text-xl mb-5 flex items-center gap-5">
             <span className="bg-primary text-white p-3 text-xl rounded-full ">
               <FaCheck />

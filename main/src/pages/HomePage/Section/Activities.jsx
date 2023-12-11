@@ -5,7 +5,7 @@ import ActivitiesTask from "../../../element/ActivitiesTask";
 const Activities = () => {
   return (
     <Container bgColor="bg-secondary">
-      <div className="grid grid-cols-3 font-karla">
+      <div className="grid lg:grid-cols-3 md:grid-cols-2 gap-14 font-karla">
         {ActivitiesData.map((tasks) => (
           <ActivitiesTask key={tasks.id} tasks={tasks} />
         ))}

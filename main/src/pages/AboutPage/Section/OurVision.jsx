@@ -4,8 +4,8 @@ import SmallHero from "../../../components/dynamic/SmallHero/SmallHero";
 const OurVision = () => {
   return (
     <Container bgColor="bg-secondary">
-      <div className="flex justify-between items-center  gap-40">
-        <div className="md:w-1/2 w-full">
+      <div className="flex lg:justify-between lg:flex-row flex-col  items-center  lg:gap-40 gap-10">
+        <div className="lg:w-1/2 w-full">
           <h2 className="text-primary font-bold text-2xl mb-5">
             We Have Been Certified & Trusted By More Than 50+ Clients
           </h2>

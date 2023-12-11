@@ -14,7 +14,7 @@ const SectionHeader = ({
     <div className={cn("my-5", sectionHeaderContainerClassNames)}>
       <h2
         className={cn(
-          "text-3xl font-bold text-[#1FBEF9] capitalize font font-karla drop-shadow",
+          "md:text-3xl text-xl font-bold text-[#1FBEF9] capitalize font font-karla drop-shadow",
           sectionHeaderHeadingClassNames
         )}
       >

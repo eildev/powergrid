@@ -17,7 +17,7 @@ const OurSisterConcern = () => {
         />
       </div>
 
-      <div className="grid  lg:grid-cols-3 md:grid-col-2 gap-10">
+      <div className="grid  lg:grid-cols-3 md:grid-cols-2 gap-10">
         {sisterConcernCardData.map((data) => (
           <SisterConcernCard key={data.id} data={data} />
         ))}

@@ -3,6 +3,7 @@ import image from "../../assets/img/banner/bannerimg.png";
 import BenefitsWithOurService from "./Section/BenefitsWithOurService";
 import AboutOurBestService from "./Section/AboutOurBestService";
 import OurAllServices from "./Section/OurAllServices";
+import FrequentlyAskedQuestions from "./Section/FrequentlyAskedQuestions";
 const ServicesPage = () => {
   return (
     <>
@@ -16,6 +17,9 @@ const ServicesPage = () => {
       <BenefitsWithOurService />
       <AboutOurBestService />
       <OurAllServices />
+      <div className="hidden sm:block">
+        <FrequentlyAskedQuestions />
+      </div>
     </>
   );
 };

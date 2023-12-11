@@ -16,17 +16,19 @@ const OurAllServices = () => {
         headerDescription={true}
       />
 
-      <div className="grid grid-cols-3 gap-10">
+      <div className="grid lg:grid-cols-3 md:grid-cols-2 gap-10">
         {cardData.map((data) => (
           <Card key={data.id} data={data} />
         ))}
       </div>
 
-      <div className="flex justify-between items-center mt-10">
-        <Header className="text-md font-bold capitalize">
+      <div className="flex sm:justify-between justify-center items-center mt-10">
+        <Header className="text-md font-bold capitalize hidden sm:block">
           our more services
         </Header>
-        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit.</p>
+        <p className="hidden lg:block">
+          Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+        </p>
 
         <Button title="View All" className="bg-primary text-white" />
       </div>

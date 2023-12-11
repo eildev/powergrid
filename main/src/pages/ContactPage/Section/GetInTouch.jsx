@@ -7,7 +7,7 @@ import ContactElement from "../../../element/ContactElement";
 const GetInTouch = () => {
   return (
     <Container>
-      <div className="grid md:grid-cols-2 gap-20">
+      <div className="grid lg:grid-cols-2 gap-20">
         <div>
           <Header className="text-3xl mb-5">Get In Touch</Header>
           <p className="mb-5">

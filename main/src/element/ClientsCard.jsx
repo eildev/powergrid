@@ -3,9 +3,9 @@ import image1 from "../assets/img/about/about1.png";
 
 const ClientsCard = () => {
   return (
-    <div className="ml-24">
-      <div className="bg-secondary w-[350px] rounded-md relative">
-        <div className="absolute top-1/2 -left-[50px] -translate-y-1/2 w-[100px] h-[100px] rounded-md overflow-hidden">
+    <div className="lg:ml-24 sm:ml-14 ml-14">
+      <div className="bg-secondary lg:w-[350px] sm:w-[250px] w-[250px] rounded-md relative">
+        <div className="absolute top-1/2 lg:-left-[50px] -left-[35px] -translate-y-1/2 lg:w-[100px] lg:h-[100px] w-[70px] h-[70px] rounded-md overflow-hidden">
           <img src={image1} className="h-full w-full object-cover" alt="" />
         </div>
 
@@ -15,14 +15,19 @@ const ClientsCard = () => {
               <FaQuoteLeft />
             </span>
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestias
-            cupiditate, molestiae obcaecati esse vel suscipit quod perferendis
-            eligendi deserunt accusamus commodi, nisi assumenda, incidunt
-            dolores similique corrupti dolorem voluptatem laboriosam soluta
-            recusandae distinctio eum debitis reiciendis? Dolorum natus est,
-            commodi sequi lorem,
-            <span className="text-primary absolute -bottom-1 right-7">
-              <FaQuoteRight />
+            cupiditate, molestiae{" "}
+            <span className="hidden sm:block">
+              obcaecati esse vel suscipit quod perferendis eligendi deserunt
+              accusamus commodi, nisi assumenda, incidunt dolores
             </span>
+            <span className="hidden lg:block">
+              similique corrupti dolorem voluptatem laboriosam soluta recusandae
+              distinctio eum debitis reiciendis? Dolorum natus est, commodi
+              sequi lorem,
+            </span>
+            <p className="text-primary text-right">
+              <FaQuoteRight />
+            </p>
           </p>
 
           <h3 className="text-primary font-semibold text-xl mt-1">

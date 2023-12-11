@@ -1,9 +1,6 @@
 import Hero from "../../components/dynamic/Hero/Hero";
 import Slider from "../../components/dynamic/Slider/Slider";
 
-import about1 from "../../assets/img/about/about1.png";
-import about2 from "../../assets/img/about/about2.png";
-import about3 from "../../assets/img/about/about3.png";
 import Activities from "./Section/Activities";
 import WhyChooseUs from "./Section/WhyChooseUs";
 import MessageFormChairman from "./Section/MessageFormChairman";
@@ -23,24 +20,31 @@ const HomePage = () => {
       <Container>
         <Hero
           title="About our company"
-          width={100}
-          width2={100}
           description="Lorem, ipsum dolor sit amet consectetur adipisicing elit. Incidunt quam expedita nulla totam, sit odit magni sequi hic quasi, vero rerum dicta esse. Neque, dolore! Lorem ipsum dolor sit amet consectetur adipisicing elit. Aperiam, nobis, architecto cupiditate delectus eum sunt, tempora voluptas illo molestias perferendis accusantium? !"
           description2="Lorem, ipsum dolor sit amet consectetur adipisicing elit. Incidunt quam expedita nulla totam, sit odit magni sequi hic quasi, vero rerum dicta esse. Neque, dolore! Lorem ipsum dolor sit amet consectetur adipisicing elit. Aperiam, nobis, architecto cupiditate delectus eum sunt, tempora voluptas illo molestias perferendis accusantium? !"
-          img1={about1}
-          img2={about2}
-          img3={about3}
         />
       </Container>
-      <Activities />
+      <div className="block sm:hidden lg:block">
+        <Activities />
+      </div>
       <WhyChooseUs />
+      <div className="hidden lg:hidden sm:block">
+        <Activities />
+      </div>
       <MessageFormChairman />
       <OurServices />
       <OurSisterConcern />
-      <ProfessionalTeam />
+      <div className="hidden sm:block">
+        <ProfessionalTeam />
+      </div>
       <Gallery />
+      <div className="hidden lg:hidden sm:block">
+        <LatestNews />
+      </div>
       <GetAQuote />
-      <LatestNews />
+      <div className="block sm:hidden lg:block">
+        <LatestNews />
+      </div>
       <Clients />
     </>
   );

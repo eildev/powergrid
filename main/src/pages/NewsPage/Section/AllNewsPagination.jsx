@@ -4,7 +4,7 @@ import Container from "../../../components/dynamic/Container/Container";
 const AllNewsPagination = () => {
   return (
     <Container>
-      <div className="text-center text-xl flex items-center w-[300px] mx-auto gap-5">
+      <div className="text-center text-xl flex sm:justify-normal items-center sm:w-[300px] w-full mx-auto gap-5 justify-between">
         <span className="flex items-center gap-2 cursor-pointer">
           <FaAngleLeft />
           Prev

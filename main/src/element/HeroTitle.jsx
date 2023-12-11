@@ -10,6 +10,7 @@ const HeroTitle = ({
   sectionHeaderContainerClassNames,
   description1ClassName,
   description2ClassName,
+  sectionHeaderHeadingClassNames,
 }) => {
   return (
     <div>
@@ -18,6 +19,7 @@ const HeroTitle = ({
         headerDescription={headerDescription}
         title={title}
         sectionHeaderContainerClassNames={sectionHeaderContainerClassNames}
+        sectionHeaderHeadingClassNames={sectionHeaderHeadingClassNames}
       />
       <p className={cn("text-[#2D2C2C] leading-8", description1ClassName)}>
         {description1}
