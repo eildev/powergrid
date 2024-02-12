@@ -11,11 +11,11 @@ const OurServices = () => {
         <SectionHeader
           title="Our Services"
           description="Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the "
-          sectionHeaderHeadingClassNames="mb-4 text-center"
-          sectionHeaderParagraphClassName="max-w-[500px] text-center"
+          sectionHeaderHeadingClassNames="mb-4 md:text-start text-center"
+          sectionHeaderParagraphClassName="max-w-[500px] md:text-start text-center"
           headerDescription={true}
         />
-        <div className="hidden sm:hidden">
+        <div className="hidden sm:block">
           <Button title="more" className="text-body bg-primary" />
         </div>
       </div>
